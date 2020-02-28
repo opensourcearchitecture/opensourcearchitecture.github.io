@@ -10,5 +10,15 @@
     "type": "git",
     "url": "?.git"
   },
-  "author": "Mitch"
+  "author": "Mitch",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-coffee": "^3.0.3",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-util": "^3.0.8"
+  }
 }
