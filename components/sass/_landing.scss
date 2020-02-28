@@ -1,0 +1,29 @@
+//landing header
+.header_landing {
+	@include centerContents($height: 75px, $width: 150px, 
+			$background-image: $image-landinghead, $flex-direction: column);
+}
+
+//project section
+.projects_main {
+	@include centerContainer()
+}
+
+//generalized project block
+%planding {
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	margin-bottom: 60px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+//generate project blocks from project index
+@each $p-num, $title in $project-index {
+	.#{$p-num}_landing {
+		@extend %planding;
+		@include preLoadHov('../images/#{$title}/lndImgBW.png',
+			'../images/#{$title}/lndImgCL.png');
+	}
+}
