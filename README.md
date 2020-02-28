@@ -1,2 +1,2 @@
 # opensourcearchitecture.io
-Online Platform for Design/ Architecture Work
+Online Platform for Design/ Architecture Discourse
