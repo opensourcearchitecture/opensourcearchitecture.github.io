@@ -13,14 +13,22 @@
   "author": "Mitch",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-browserify": "^0.5.1",
-    "gulp-coffee": "^3.0.3",
-    "gulp-compass": "^2.1.0",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "bootstrap": "^4.4.1",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-connect": "^5.7.0",
-    "gulp-util": "^3.0.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-wait": "0.0.2",
     "jquery": "^3.4.1",
-    "mustache": "^4.0.0"
-  }
+    "node-sass": "^4.13.1"
+  },
+  "keywords": [
+    "Architecture",
+    "Discourse"
+  ],
+  "license": "ISC"
 }

@@ -1,65 +1,63 @@
-var gulp = require('gulp'),
-	gutil = require('gulp-util'),
-	coffee = require('gulp-coffee'),
-	concat = require('gulp-concat'),
-	browserify = require('gulp-browserify'),
-	compass = require('gulp-compass'),
-	connect = require('gulp-connect');
+const {src, dest, series, parallel, watch} = require('gulp');
+const del = require('del');
+const origin = 'src';
+//const destination = '';
+const browserSync = require('browser-sync').create();
+const babel = require('gulp-babel');
+const concatenate = require('gulp-concat');
+const sass = require('gulp-sass');
+const wait = require('gulp-wait');
+
+sass.compiler = require('node-sass');
+
+//function html(cb) {
+//	src(`${origin}/**/*.html`).pipe(dest(`${destination}`));
+//	cb();
+//}
 
 
-var coffeeSources = ['components/coffee/*.coffee'];
-var jsSources = ['components/scripts/descriptions.js',
-				'components/scripts/buttons.js'];
-var sassSources = ['components/sass/style.scss'];
-var htmlSources = ['*.html',
-					'pages/*.html'];
+function css(cb) {
+	src(`${origin}/sass/style.scss`)
+	.pipe(wait(500))
+	.pipe(sass({
+		outputSyle: 'compressed'
+	}))
+	.pipe(dest('css'));
 
+	cb();
+}
 
-gulp.task('coffee',function() {
-	gulp.src(coffeeSources)
-		.pipe(coffee({bare: true})
-			.on('error',gutil.log))
-		.pipe(gulp.dest('components/scripts'))
-});
+function js(cb) {
+	src(`${origin}/js/**/*.js`)
+	.pipe(babel({
+		presets: ['@babel/env']
+	}))
+	.pipe(concatenate('build.js'))
+	.pipe(dest('js'));
+	cb();
+}
 
-gulp.task('js',function() {
-	gulp.src(jsSources)
-		.pipe(concat('script.js'))
-		.pipe(browserify())
-		.pipe(gulp.dest('js'))
-		.pipe(connect.reload())
-});
+//async function clean(cb) {
+//	await del(destination);
+//	cb();
+//}
 
-gulp.task('compass',function() {
-	gulp.src(sassSources)
-		.pipe(compass({
-			sass: 'components/sass',
-			image: 'builds/images',
-			style: 'expanded'
-		}))
-		.on('error',gutil.log)
-		.pipe(gulp.dest('css'))
-		.pipe(connect.reload())
-});
+function watcher (cb) {
+	watch(`${origin}/sass/*.scss`).on('change',series(css, browserSync.reload))
+	watch('pages/*.html').on('change', browserSync.reload)
+	watch('index.html').on('change', browserSync.reload)
+	watch(`${origin}/**/*.js`).on('change',series(js, browserSync.reload))
+	cb();
+}
 
-gulp.task('html',function(){
-	gulp.src(htmlSources)
-	.pipe(connect.reload())
-})
+function server(cb) {
+	browserSync.init({
+		notify: false,
+		server:{
+			baseDir:'./'
+		}
+	})
+	cb();
+}
 
-gulp.task('connect', function(){
-	connect.server({
-		root:'',
-		livereload: true
-	});
-});
-
-gulp.task('default',['coffee','js','compass','html','connect','watch'])
-
-gulp.task('watch',function (){
-	gulp.watch(coffeeSources, ['coffee']);
-	gulp.watch(jsSources, ['js']);
-	gulp.watch('components/sass/*.scss',['compass']);
-	gulp.watch(htmlSources,['html']);
-
-})
+exports.default = series(parallel(css, js), server, watcher);
