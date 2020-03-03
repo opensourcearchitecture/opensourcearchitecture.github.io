@@ -14,7 +14,11 @@ h1 {
 h2, .navigation li {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
+<<<<<<< HEAD
   color: #c831a0;
+=======
+  color: #494949;
+>>>>>>> development
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   text-decoration: none; }
@@ -22,7 +26,11 @@ h2, .navigation li {
 h3 {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
+<<<<<<< HEAD
   color: #c831a0;
+=======
+  color: #494949;
+>>>>>>> development
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   text-decoration: none; }
@@ -85,8 +93,8 @@ p, .centerAlign, .centerAlignBold {
     display: inline-block;
     margin: 0 0.75em;
     padding: .35em 1em;
-    border: 1px solid #494949;
-    background-color: whitesmoke;
+    border: none;
+    background-color: none;
     border-radius: 5px; }
     .navigation li:hover {
       background-color: rgba(73, 73, 73, 0.1); }
