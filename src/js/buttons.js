@@ -1,4 +1,5 @@
 //description button listener
+
 var $description_text = $('.description_text');
 var $description_holder = $('.description_holder');
 
