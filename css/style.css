@@ -871,3 +871,31 @@ p, .centerAlign, .centerAlignBold {
   background: url("../images/Holder_Title.png") no-repeat center center;
   background-size: contain;
   margin: 30px auto; }
+
+.comment_image_1 {
+  background: url("../images/Rectangle_Gray.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.comment_image_2 {
+  background: url("../images/Rectangle_Pnk.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.comment_image_3 {
+  background: url("../images/Rectangle_Blu.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
+
+.comment_image_4 {
+  background: url("../images/Rectangle_Gray.png") no-repeat center center;
+  background-size: contain;
+  width: 75vw;
+  height: 55vw;
+  margin-bottom: 10vw; }
