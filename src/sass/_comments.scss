@@ -1,26 +1,6 @@
 //comment image background
-.comment_image_1 {
-	@include bckImg("../images/Rectangle_Gray.png");
-	width: 75vw;
-	height: 55vw;
-	margin-bottom: 10vw;
-}
-
-.comment_image_2 {
-	@include bckImg("../images/Rectangle_Pnk.png");
-	width: 75vw;
-	height: 55vw;
-	margin-bottom: 10vw;
-}
-
-.comment_image_3 {
-	@include bckImg("../images/Rectangle_Blu.png");
-	width: 75vw;
-	height: 55vw;
-	margin-bottom: 10vw;
-}
-
-.comment_image_4 {
+.comment_grid {
+	@include centerContainer();
 	@include bckImg("../images/Rectangle_Gray.png");
 	width: 75vw;
 	height: 55vw;

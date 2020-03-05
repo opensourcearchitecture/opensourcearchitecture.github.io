@@ -872,28 +872,13 @@ p, .centerAlign, .centerAlignBold {
   background-size: contain;
   margin: 30px auto; }
 
-.comment_image_1 {
-  background: url("../images/Rectangle_Gray.png") no-repeat center center;
-  background-size: contain;
-  width: 75vw;
-  height: 55vw;
-  margin-bottom: 10vw; }
-
-.comment_image_2 {
-  background: url("../images/Rectangle_Pnk.png") no-repeat center center;
-  background-size: contain;
-  width: 75vw;
-  height: 55vw;
-  margin-bottom: 10vw; }
-
-.comment_image_3 {
-  background: url("../images/Rectangle_Blu.png") no-repeat center center;
-  background-size: contain;
-  width: 75vw;
-  height: 55vw;
-  margin-bottom: 10vw; }
-
-.comment_image_4 {
+.comment_grid {
+  position: relative;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  background: none;
   background: url("../images/Rectangle_Gray.png") no-repeat center center;
   background-size: contain;
   width: 75vw;
