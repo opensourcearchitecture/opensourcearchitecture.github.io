@@ -873,14 +873,31 @@ p, .centerAlign, .centerAlignBold {
   margin: 30px auto; }
 
 .comment_grid {
-  position: relative;
-  width: 100%;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  text-align: center;
-  background: none;
-  background: url("../images/Rectangle_Gray.png") no-repeat center center;
+  background: url("../images/Rectangle_Blu.png") no-repeat center center;
   background-size: contain;
+  background-size: cover;
+  height: 75vw;
   width: 75vw;
-  height: 55vw;
-  margin-bottom: 10vw; }
+  margin-bottom: 20vw;
+  font-size: 0; }
+
+.tile_container {
+  height: 25vw;
+  width: 24.9vw;
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+  border: 0.5px solid whitesmoke; }
+
+.tile_button {
+  height: 23vw;
+  width: 23vw;
+  margin-top: 1vw;
+  background: rgba(229, 229, 229, 0.8); }
+
+.text_input {
+  height: 23vw;
+  width: 23vw;
+  margin-top: 1vw;
+  background: whitesmoke;
+  display: none; }
