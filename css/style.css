@@ -286,7 +286,7 @@ p, .centerAlign, .centerAlignBold {
 
 .scroll_container {
   height: 100%;
-  width: 75vw;
+  width: 80vw;
   overflow: scroll;
   position: relative;
   -webkit-overflow-scrolling: touch; }
@@ -878,23 +878,14 @@ p, .centerAlign, .centerAlignBold {
   background-size: cover;
   height: 75vw;
   width: 75vw;
-<<<<<<< HEAD
-  height: 55vw;
-  margin-bottom: 10vw; }
-
-.grid_tile {
-  border: 1px solid whitesmoke; }
-=======
   margin-bottom: 20vw;
   font-size: 0; }
 
 .tile_container {
-  height: 25vw;
-  width: 24.9vw;
   display: inline-block;
   text-align: center;
   font-size: 0;
-  border: 0.5px solid whitesmoke; }
+  border: 0.01px solid whitesmoke; }
 
 .tile_button {
   height: 23vw;
@@ -908,4 +899,3 @@ p, .centerAlign, .centerAlignBold {
   margin-top: 1vw;
   background: whitesmoke;
   display: none; }
->>>>>>> bd7513f564274e7edceb702a71af0b4b5d87989f

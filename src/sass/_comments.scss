@@ -7,20 +7,12 @@
 	margin-bottom: 20vw;
 	font-size: 0;
 }
-
-<<<<<<< HEAD
-//grid tiles
-.grid_tile {
-	border: 1px solid $color-textbackground;
-=======
 //grid tile containers
 .tile_container {
-	height: 25vw;
-	width: 24.9vw;
 	display: inline-block;
 	text-align: center;
 	font-size: 0;
-	border: 0.5px solid $white-gray;
+	border: .01px solid $white-gray;
 }
 
 //grid tile buttons
@@ -39,5 +31,4 @@
 	margin-top: 1vw;
 	background: $color-textbackground;
 	display: none;
->>>>>>> bd7513f564274e7edceb702a71af0b4b5d87989f
 }
