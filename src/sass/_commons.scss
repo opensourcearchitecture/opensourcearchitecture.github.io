@@ -78,6 +78,7 @@ p {
 
 		ul{
 			@include centerContents();
+			padding: 0;
 		}
 
 		li{

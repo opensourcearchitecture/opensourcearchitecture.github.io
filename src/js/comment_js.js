@@ -23,8 +23,46 @@ function clearGrid(){
 	$(".tile_container").remove();
 };
 
-//create grid on loading
+//grid click handling
+function gridClick(clicked){
+	//c;ear previous selections
+	$(".tile_container").css("background-color","");
+	//change current selection
+	clicked.css("background-color","rgba(155, 49, 160,0.75)");
+	//highlight toggle
+	$(".input_off").css("display", "block");
+	$(".input_off").css("background-color", "rgba(155, 49, 160,0.75)");
+	//bring up text input
+	$(".text_input").css("display","block");
+	//change placeholder coordinates
+	var id = clicked.attr("id");
+	$(".text_input").attr("placeholder","Comments: Tile "+id);
+	//return clicked object
+	return clicked;
+}
+
+//create grid/ text input on loading
 $(document).ready(function(){
 	clearGrid();
 	createGrid(10);
+
+	$(".tile_container").click(function(){
+		var clicked = gridClick($(this));
+	});
+
+	$(".input_off").click(function(){
+		//close text input
+		$(".tile_container").css("background-color","");
+		$(".text_input").css("display","none");
+		$(".input_off").css("display", "none");
+	});
+
+	$(".input_on").click(function(){
+		//open text input
+		$(".text_input").css("display","block");
+		$(".input_off").css("display", "block");
+		$(".input_off").css("background-color", "rgba(155, 49, 160,0.75)");
+		$(".text_input").attr("placeholder","Comments: Tile X_Y");
+	});
 });
+

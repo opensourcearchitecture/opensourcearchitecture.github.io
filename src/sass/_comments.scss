@@ -1,6 +1,6 @@
 //comment image
 .comment_grid {
-	@include bckImg("../images/Rectangle_Blu.png");
+	@include bckImg("../images/Plan.png");
 	background-size: cover;
 	height: 75vw;
 	width: 75vw;
@@ -12,23 +12,31 @@
 	display: inline-block;
 	text-align: center;
 	font-size: 0;
-	border: .01px solid $white-gray;
+	border: .01px solid $dark-gray-tsp;
+	&:hover{
+		background-color: $portfolio-pink-tsp;
+	}
 }
 
-//grid tile buttons
-.tile_button {
-	height: 23vw;
-	width: 23vw;
-	margin-top: 1vw;
-	background: $color-button-background;
-
+//text input box
+.input_container {
+	@include centerContainer($position: absolute, $padding-top: 10px, $padding-bottom: 10px);
+	left: 0px;
+	bottom: 60px;
 }
 
-//grid tile text input
+//text input
 .text_input {
-	height: 23vw;
-	width: 23vw;
-	margin-top: 1vw;
+	@include centerContents($width: 50vw);
 	background: $color-textbackground;
+	border: 1px solid $dark-gray;
+	border-radius: 10px;
+	padding: 20px;
+	display: none;
+	margin-bottom: 10px;
+	font-size: 15pt;
+}
+
+.input_off {
 	display: none;
 }

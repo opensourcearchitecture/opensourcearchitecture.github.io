@@ -80,7 +80,8 @@ p, .centerAlign, .centerAlignBold {
     height: auto;
     width: auto;
     background: url(none) no-repeat center center;
-    background-size: contain; }
+    background-size: contain;
+    padding: 0; }
   .navigation li {
     display: inline-block;
     margin: 0 0.75em;
@@ -286,7 +287,7 @@ p, .centerAlign, .centerAlignBold {
 
 .scroll_container {
   height: 100%;
-  width: 80vw;
+  width: 75vw;
   overflow: scroll;
   position: relative;
   -webkit-overflow-scrolling: touch; }
@@ -848,7 +849,7 @@ p, .centerAlign, .centerAlignBold {
   cursor: pointer;
   display: none; }
   .description_text:hover {
-    background: rgba(155, 49, 160, 0.75); }
+    background: rgba(155, 49, 160, 0.5); }
 
 .description_holder {
   border: 1px solid #494949;
@@ -859,7 +860,7 @@ p, .centerAlign, .centerAlignBold {
   cursor: pointer;
   -webkit-appearance: none; }
   .description_holder:hover {
-    background: rgba(155, 49, 160, 0.75); }
+    background: rgba(155, 49, 160, 0.5); }
 
 .holder_head {
   display: flex;
@@ -873,7 +874,7 @@ p, .centerAlign, .centerAlignBold {
   margin: 30px auto; }
 
 .comment_grid {
-  background: url("../images/Rectangle_Blu.png") no-repeat center center;
+  background: url("../images/Plan.png") no-repeat center center;
   background-size: contain;
   background-size: cover;
   height: 75vw;
@@ -885,17 +886,36 @@ p, .centerAlign, .centerAlignBold {
   display: inline-block;
   text-align: center;
   font-size: 0;
-  border: 0.01px solid whitesmoke; }
+  border: 0.01px solid rgba(73, 73, 73, 0.1); }
+  .tile_container:hover {
+    background-color: rgba(155, 49, 160, 0.5); }
 
-.tile_button {
-  height: 23vw;
-  width: 23vw;
-  margin-top: 1vw;
-  background: rgba(229, 229, 229, 0.8); }
+.input_container {
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background: none;
+  left: 0px;
+  bottom: 60px; }
 
 .text_input {
-  height: 23vw;
-  width: 23vw;
-  margin-top: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  height: auto;
+  width: 50vw;
+  background: url(none) no-repeat center center;
+  background-size: contain;
   background: whitesmoke;
+  border: 1px solid #494949;
+  border-radius: 10px;
+  padding: 20px;
+  display: none;
+  margin-bottom: 10px;
+  font-size: 15pt; }
+
+.input_off {
   display: none; }
