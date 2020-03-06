@@ -11,17 +11,35 @@
 	<title>Comments</title>
 </head>
 <body>
-	<main class="full_block">
-		<div class="comment_grid">
-			<div class="grid_tile" id="1_1"></div>
-			<div class="grid_tile" id="1_2"></div>
-			<div class="grid_tile" id="1_3"></div>
-			<div class="grid_tile" id="2_1"></div>
-			<div class="grid_tile" id="2_2"></div>
-			<div class="grid_tile" id="2_3"></div>
-			<div class="grid_tile" id="3_1"></div>
-			<div class="grid_tile" id="3_2"></div>
-			<div class="grid_tile" id="3_3"></div>
+	<main class= "full_block">
+		<div class="scroll_container">
+			<section class="header">
+				<div class="header_project">
+					<h1>Comment</h1>
+				</div>
+			</section>
+			<div class="comment_grid">
+
+				<div class="tile_container">
+					<div class= "tile_button" id="1_1_t"></div>
+					<input type="text" class="text_input" id="1_1_i" size="20">
+				</div>
+
+				<div class="tile_container">
+					<div id="1_2_t"></div>
+					<div id="1_2_c">
+						<input type="text" class="text_input" id="1_2_i" size="20">
+					</div>
+				</div>
+
+				<div class="tile_container">
+					<div id="1_3_t"></div>
+					<div id="1_3_c">
+						<input type="text" class="text_input" id="1_3_i" size="20">
+					</div>
+				</div>
+
+			</div>
 		</div>
 	</main>
 
@@ -31,5 +49,7 @@
 			<a href="../index.html"><li>Index</li></a>
 		</ul>
 	</nav>
+
+	<script type="text/javascript" src="../js/build.js"></script>
 </body>
 </html>
