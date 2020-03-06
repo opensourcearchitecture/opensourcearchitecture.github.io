@@ -101,6 +101,6 @@ p {
     background: transparent; /* make scrollbar transparent */
 }
 
-    body { -ms-overflow-style: none;
-   			scrollbar-width: none;
-}
+    body { -ms-overflow-style: none; }
+   		
+   		body {	scrollbar-width: none; }
