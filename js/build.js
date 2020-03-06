@@ -86,7 +86,7 @@ function gridClick(clicked) {
 
 $(document).ready(function () {
   clearGrid();
-  createGrid(10);
+  createGrid(20);
   $(".tile_container").click(function () {
     var clicked = gridClick($(this));
   });

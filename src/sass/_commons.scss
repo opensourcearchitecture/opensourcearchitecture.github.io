@@ -95,8 +95,10 @@ p {
 }
 }
 
-//scrollbar handling
+//scrollbar handling Chrome, Safari
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
+
+    body { -ms-overflow-style: none; }

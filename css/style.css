@@ -97,6 +97,9 @@ p, .centerAlign, .centerAlignBold {
   background: transparent;
   /* make scrollbar transparent */ }
 
+body {
+  -ms-overflow-style: none; }
+
 .header_landing {
   display: flex;
   flex-direction: column;
@@ -874,7 +877,7 @@ p, .centerAlign, .centerAlignBold {
   margin: 30px auto; }
 
 .comment_grid {
-  background: url("../images/Plan.png") no-repeat center center;
+  background: url("../images/Plan_Satellite.png") no-repeat center center;
   background-size: contain;
   background-size: cover;
   height: 75vw;
@@ -886,7 +889,7 @@ p, .centerAlign, .centerAlignBold {
   display: inline-block;
   text-align: center;
   font-size: 0;
-  border: 0.01px solid rgba(73, 73, 73, 0.1); }
+  border: none; }
   .tile_container:hover {
     background-color: rgba(155, 49, 160, 0.5); }
 

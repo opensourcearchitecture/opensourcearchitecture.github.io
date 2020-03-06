@@ -1,6 +1,6 @@
 //comment image
 .comment_grid {
-	@include bckImg("../images/Plan.png");
+	@include bckImg("../images/Plan_Satellite.png");
 	background-size: cover;
 	height: 75vw;
 	width: 75vw;
@@ -12,7 +12,7 @@
 	display: inline-block;
 	text-align: center;
 	font-size: 0;
-	border: .01px solid $dark-gray-tsp;
+	border: none;
 	&:hover{
 		background-color: $portfolio-pink-tsp;
 	}
