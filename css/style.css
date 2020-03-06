@@ -98,7 +98,8 @@ p, .centerAlign, .centerAlignBold {
   /* make scrollbar transparent */ }
 
 body {
-  -ms-overflow-style: none; }
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
 
 .header_landing {
   display: flex;
