@@ -1,8 +1,13 @@
-//comment image background
+//comment image
 .comment_grid {
 	@include centerContainer();
 	@include bckImg("../images/Rectangle_Gray.png");
 	width: 75vw;
 	height: 55vw;
 	margin-bottom: 10vw;
+}
+
+//grid tiles
+.grid_tile {
+	border: 1px solid $color-textbackground;
 }

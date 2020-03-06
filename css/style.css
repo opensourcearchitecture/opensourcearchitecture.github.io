@@ -884,3 +884,6 @@ p, .centerAlign, .centerAlignBold {
   width: 75vw;
   height: 55vw;
   margin-bottom: 10vw; }
+
+.grid_tile {
+  border: 1px solid whitesmoke; }

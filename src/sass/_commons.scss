@@ -58,7 +58,6 @@ p {
 		font-weight: bold;
 }
 
-
 //full height, full width container for pages with z-indices
 .full_block {
 	@include centerContents($height: 100vh, $width: 100vw);
