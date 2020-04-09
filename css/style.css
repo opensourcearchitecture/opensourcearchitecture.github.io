@@ -880,7 +880,7 @@ body {
   margin: 30px auto; }
 
 .comment_grid {
-  background: url("../images/Plan_Satellite.png") no-repeat center center;
+  background: url("../images/Site_Plan_Dupree.png") no-repeat center center;
   background-size: contain;
   background-size: cover;
   height: 75vw;
@@ -925,3 +925,40 @@ body {
 
 .input_off {
   display: none; }
+
+.press_scroll {
+  background: url("../images/press_scroll.png") no-repeat center center;
+  background-size: contain;
+  background-size: cover;
+  height: 548vw;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vw;
+  font-size: 0; }
+
+.property_map_1_2000, .property_map_1_1000 {
+  background: url("../images/mv_1_2000.png") no-repeat center center;
+  background-size: contain;
+  background-size: cover;
+  height: 65vw;
+  width: 65vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vw;
+  font-size: 0; }
+
+.property_map_1_1000 {
+  background: url("../images/mv_1_1000.png") no-repeat center center;
+  background-size: contain; }
+
+.storyboard_scroll {
+  background: url("../images/Storyboard_Scroll.png") no-repeat center center;
+  background-size: contain;
+  background-size: cover;
+  height: 125vw;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20vw;
+  font-size: 0; }
