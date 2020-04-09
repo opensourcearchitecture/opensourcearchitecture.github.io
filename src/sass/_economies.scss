@@ -14,3 +14,13 @@
 	@extend .property_map_1_2000;
 	@include bckImg("../images/mv_1_1000.png");
 }
+
+.zoning_map_1_2000 {
+	@extend .property_map_1_2000;
+	@include bckImg("../images/Zoning_1_2000.png");
+}
+
+.zoning_map_1_1000 {
+	@extend .property_map_1_2000;
+	@include bckImg("../images/Zoning_1_1000.png");
+}

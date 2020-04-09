@@ -880,7 +880,7 @@ body {
   margin: 30px auto; }
 
 .comment_grid {
-  background: url("../images/Site_Plan_Dupree.png") no-repeat center center;
+  background: url("../images/Site_Plan_Dupree_Proposal.png") no-repeat center center;
   background-size: contain;
   background-size: cover;
   height: 75vw;
@@ -937,7 +937,7 @@ body {
   margin-bottom: 20vw;
   font-size: 0; }
 
-.property_map_1_2000, .property_map_1_1000 {
+.property_map_1_2000, .property_map_1_1000, .zoning_map_1_2000, .zoning_map_1_1000 {
   background: url("../images/mv_1_2000.png") no-repeat center center;
   background-size: contain;
   background-size: cover;
@@ -950,6 +950,14 @@ body {
 
 .property_map_1_1000 {
   background: url("../images/mv_1_1000.png") no-repeat center center;
+  background-size: contain; }
+
+.zoning_map_1_2000 {
+  background: url("../images/Zoning_1_2000.png") no-repeat center center;
+  background-size: contain; }
+
+.zoning_map_1_1000 {
+  background: url("../images/Zoning_1_1000.png") no-repeat center center;
   background-size: contain; }
 
 .storyboard_scroll {
