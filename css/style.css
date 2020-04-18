@@ -120,6 +120,28 @@ body {
   padding-bottom: 0px;
   text-align: center;
   background: none; }
+  .projects_main h2, .projects_main .navigation li, .navigation .projects_main li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    width: 200px;
+    background: url(none) no-repeat center center;
+    background-size: contain;
+    margin-top: 1em; }
+    .projects_main h2:hover, .projects_main .navigation li:hover, .navigation .projects_main li:hover {
+      background-color: rgba(73, 73, 73, 0.1); }
+  .projects_main a {
+    text-decoration: none; }
+
+.index_button {
+  width: 150px;
+  border: none;
+  background-color: none;
+  border-radius: 5px; }
+  .index_button:hover {
+    background-color: rgba(73, 73, 73, 0.1); }
 
 .p1_landing, .p2_landing, .p3_landing, .p4_landing, .p5_landing, .p6_landing, .p7_landing, .p8_landing, .p9_landing, .p10_landing, .p11_landing, .p12_landing, .p13_landing, .p14_landing, .p15_landing, .p16_landing, .p17_landing {
   display: inline-block;

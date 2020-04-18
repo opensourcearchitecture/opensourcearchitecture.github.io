@@ -7,6 +7,27 @@
 //project section
 .projects_main {
 	@include centerContainer()
+	h2 {
+		@include centerContents($width: 200px);
+		margin-top: 1em;
+		&:hover{
+					background-color: $dark-gray-tsp;
+				}
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+//index buttons
+.index_button {
+	width: 150px;
+	border: none;
+	background-color: none;
+	border-radius: 5px;
+		&:hover{
+			background-color: $dark-gray-tsp;
+				}
 }
 
 //generalized project block
