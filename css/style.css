@@ -993,3 +993,23 @@ body {
   margin-right: auto;
   margin-bottom: 20vw;
   font-size: 0; }
+
+.radio_img1, .radio_img2, .radio_img3 {
+  background: url("../images/robot5.jpg") no-repeat center center;
+  background-size: contain;
+  background-size: cover;
+  height: 40vw;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  font-size: 0; }
+
+.radio_img2 {
+  background: url("../images/robot6.jpg") no-repeat center center;
+  background-size: contain; }
+
+.radio_img3 {
+  background: url("../images/robot7.jpg") no-repeat center center;
+  background-size: contain; }
