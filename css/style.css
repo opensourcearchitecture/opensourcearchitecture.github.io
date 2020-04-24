@@ -55,6 +55,20 @@ p, .centerAlign, .centerAlignBold {
   background-size: contain;
   position: relative;
   overflow: hidden; }
+  .full_block h2, .full_block .navigation li, .navigation .full_block li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    width: 200px;
+    background: url(none) no-repeat center center;
+    background-size: contain;
+    margin-top: 1em; }
+    .full_block h2:hover, .full_block .navigation li:hover, .navigation .full_block li:hover {
+      background-color: rgba(73, 73, 73, 0.1); }
+  .full_block a {
+    text-decoration: none; }
 
 .header {
   position: relative;

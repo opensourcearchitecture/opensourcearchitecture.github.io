@@ -63,6 +63,16 @@ p {
 	@include centerContents($height: 100vh, $width: 100vw);
 	position: relative;
 	overflow: hidden;
+	h2 {
+		@include centerContents($width: 200px);
+		margin-top: 1em;
+		&:hover{
+					background-color: $dark-gray-tsp;
+				}
+	}
+	a {
+		text-decoration: none;
+	}
 }
 
 //header container -- see pages for container images
