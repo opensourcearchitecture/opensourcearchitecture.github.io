@@ -111,11 +111,9 @@ p, .centerAlign, .centerAlignBold {
   background: transparent;
   /* make scrollbar transparent */ }
 
-body {
-  -ms-overflow-style: none; }
-
-body {
-  scrollbar-width: none; }
+@-moz-document url-prefix() {
+  html, body {
+    overflow: hidden !important; } }
 
 .header_landing {
   display: flex;
@@ -1016,8 +1014,8 @@ body {
   width: 40vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10vw;
-  margin-bottom: 10vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
   font-size: 0; }
 
 .radio_img2 {
@@ -1027,3 +1025,10 @@ body {
 .radio_img3 {
   background: url("../images/robot7.jpg") no-repeat center center;
   background-size: contain; }
+
+.embed {
+  margin-top: 5vw;
+  margin-bottom: 5vw; }
+
+.highlight h2, .highlight .navigation li, .navigation .highlight li {
+  color: #c831a0; }

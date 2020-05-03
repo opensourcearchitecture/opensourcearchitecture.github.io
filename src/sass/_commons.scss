@@ -111,6 +111,6 @@ p {
     background: transparent; /* make scrollbar transparent */
 }
 
-    body { -ms-overflow-style: none; }
-   		
-   		body {	scrollbar-width: none; }
+@-moz-document url-prefix() {
+    html,body{overflow: hidden !important;}
+}
